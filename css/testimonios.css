@@ -1,0 +1,119 @@
+/*Seccion quienes somos*/
+
+.section-testimonios {
+  padding: 40px 30px;
+  text-align: center;
+  scroll-margin-top: 80px;
+}
+
+.section-quienes-somos-title {
+  font-size: 2.2rem;
+  color: var(--color3);
+  margin-bottom: 3rem;
+  text-align: center;
+  padding-top: 2.5rem;
+}
+
+.section-quienes-somos-description {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.6;
+  color: var(--color4);
+  margin-bottom: 40px;
+  text-align: justify;
+}
+
+.ctn-cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.card {
+  background-color: var(--color7);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  flex: 1;
+}
+
+.card:hover {
+  background-color: var(--color2);
+}
+
+.card-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+
+.card h4 {
+  font-size: 1rem;
+  margin-bottom: 5px;
+  color: var(--color4);
+}
+
+.card p {
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: var(--color4);
+}
+
+@media screen and (min-width: 768px) {
+
+  .section-quienes-somos-title {
+    font-size: 2.8rem;
+  }
+  
+  .section-quienes-somos-description {
+    font-size: 1.1rem;
+    line-height: 1.8;
+  }
+
+  .card p {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /*Seccion quienes somos*/
+
+  .section-quienes-somos {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .section-quienes-somos-title {
+    font-size: 3.3rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .section-quienes-somos-description {
+    font-size: 1.2rem;
+    margin-bottom: 60px;
+  }
+
+  .ctn-cards {
+    margin-bottom: 90px;
+  }
+
+  .card {
+    padding: 20px;
+    max-width: 350px;
+  }
+
+  .card h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+
+  .card p {
+    font-size: 1rem;
+  }
+}

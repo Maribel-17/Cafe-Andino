@@ -1,0 +1,138 @@
+/* Estilos generales */
+
+.section-hablemos {
+  background-color: var(--color6);
+  text-align: center;
+  padding: 4rem 2rem 2rem;
+  color: var(--color1);
+  margin: 0 auto;
+  scroll-margin-top: 100px;
+}
+
+.container-section-hablemos {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.section-hablemos h5 {
+  margin-bottom: 1rem;
+  color: var(--color2);
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.section-hablemos h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.8rem;
+  margin: 2rem 0px 2rem;
+  color: var(--color1);
+}
+
+.section-hablemos p {
+  font-size: 1rem;
+  text-align: justify;
+  line-height: 1.5rem;
+  color: var(--color3);
+}
+
+.section-hablemos p strong {
+  color: var(--color1);
+}
+
+.container-img-hablemos {
+  margin: 2rem 0px;
+}
+
+.button-hablemos {
+  text-align: center;
+  width: 100%;
+}
+
+.btn-hablemos {
+  background-color: var(--color2);
+  color: var(--color11);
+  padding: 0.8rem 1.6rem;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  display: inline-block;
+  margin: 1.5rem 0rem;
+}
+
+.btn-hablemos:hover {
+  background-color: var(--color14);
+}
+
+@media screen and (min-width: 768px) {
+  .section-hablemos h5 {
+    font-size: 1rem;
+  }
+
+  .section-hablemos h1 {
+    font-size: 2.2rem;
+  }
+
+  .section-hablemos p {
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+  }
+
+  .section-hablemos p strong {
+    margin-bottom: 2rem;
+  }
+
+  .container-img-hablemos {
+    max-width: 400px;
+    margin: 2rem auto;
+    width: 100%;
+  }
+
+}
+
+@media screen and (min-width: 1024px) {
+  .container-section-hablemos {
+    margin: 0 auto;
+    flex-direction: row;
+    gap: 4rem;
+    max-width: 1200px;
+  }
+
+  .container-texto-hablemos {
+    text-align: left;
+  }
+
+  .section-hablemos h5 {
+    text-align: left;
+    font-size: 1.1rem;
+  }
+
+  .section-hablemos h1 {
+    font-size: 2.8rem;
+    line-height: 1.3;
+  }
+
+  .section-hablemos p {
+    font-size: 1.2rem;
+  }
+
+  .section-hablemos p strong {
+    font-size: 1.3rem;
+  }
+
+  .container-texto-hablemos {
+    text-align: left;
+    max-width: 50%;
+  }
+
+  .container-img-hablemos {
+    max-width: 600px;
+  }
+
+  .button-hablemos {
+    text-align: left;
+  }
+}

@@ -1,0 +1,289 @@
+/* Estilos generales */
+
+.section-planes {
+  text-align: center;
+  padding: 4rem 2rem 2rem;
+  color: var(--color1);
+  margin: 0 auto;
+  scroll-margin-top: 100px;
+}
+
+.contenedor-planes {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.section-planes h5 {
+  margin-bottom: 1rem;
+  color: var(--color2);
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.section-planes h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.8rem;
+  margin: 2rem 0px 2rem;
+  color: var(--color1);
+}
+
+.section-planes p strong {
+  color: var(--color3);
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.sello-codigo {
+  display: none;
+}
+
+.contenedor-planes {
+  max-width: 1200px;
+  margin: 2rem 0 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.plan {
+  background-color: var(--color12);
+  border: 1px solid var(--color2);
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: 1rem 0rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.plan-titulo {
+  color: var(--color2);
+  font-size: 1.5rem;
+  text-align: center;
+  background-color: var(--color7);
+  border-radius: 10px;
+  padding: 0.5rem 0.5rem;
+}
+
+.plan-descripcion {
+  color: var(--color3);
+  font-size: 0.95rem;
+  margin: 1.5rem 0 0;
+  font-weight: 600;
+  text-align: center;
+}
+
+.plan-precio {
+  color: var(--color2);
+  font-size: 2rem;
+  margin: 1rem 0;
+  font-weight: 700;
+  text-align: center;
+}
+
+.plan-incluye {
+  color: var(--color3);
+  font-size: 1rem;
+  margin: 1rem 0;
+  font-weight: 700;
+}
+
+.listado li,
+.plan-lista li {
+  position: relative;
+  padding-left: 2rem;
+  margin-bottom: 1rem;
+  color: var(--color3);
+  font-size: 1rem;
+  line-height: 1.8rem;
+  text-align: left;
+}
+
+.listado li::before,
+.plan-lista li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.3rem;
+  width: 1rem;
+  height: 1rem;
+  background-image: url("../img/IcoCheck.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.plan-nota {
+  font-size: 0.8rem;
+  color: var(--color3);
+  background-color: var(--color13);
+  padding: 1rem 1rem;
+  margin: 2rem auto;
+  text-align: center;
+  font-style: italic;
+  border-radius: 0.5rem;
+}
+
+.plan-tiempo {
+  font-size: 0.7rem;
+  color: var(--color3);
+  margin: 1rem auto;
+  text-align: center;
+  font-weight: 600;
+}
+
+.boton-plan {
+  display: inline-block;
+  background-color: var(--color2);
+  color: var(--color11);
+  padding: 0.8rem 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.boton-plan:hover {
+  background-color: var(--color14);
+}
+
+@keyframes flotar {
+  0% {
+    transform: translate(-30%, -10%);
+  }
+  50% {
+    transform: translate(-30%, -20%);
+  }
+  100% {
+    transform: translate(-30%, -10%);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section-planes h5 {
+    font-size: 1rem;
+  }
+
+  .section-planes h1 {
+    font-size: 2.2rem;
+  }
+
+  .section-planes {
+    position: relative;
+  }
+
+  .sello-codigo {
+    display: block;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    transform: translate(-30%, -10%);
+    width: 130px;
+    z-index: 10;
+    animation: flotar 3s ease-in-out infinite;
+    width: 140px;
+  }
+
+  .sello-codigo img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .plan-titulo {
+    font-size: 1.6rem;
+  }
+
+  .plan-precio {
+    font-size: 2.4rem;
+  }
+
+  .boton-plan {
+    width: 70%;
+    max-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .section-planes {
+    text-align: left;
+    max-width: 1200px;
+  }
+
+  .sello-codigo {
+    width: 170px;
+    top: 40px;
+    right: 0;
+    transform: translate(-30%, -10%);
+  }
+
+  .contenedor-planes {
+    flex-direction: row;
+    margin: 0 auto;
+    padding: 2rem 0rem;
+    gap: 3rem;
+    align-items: stretch;
+  }
+
+  .section-planes h5 {
+    text-align: left;
+    font-size: 1.1rem;
+  }
+
+  .section-planes h1 {
+    font-size: 2.8rem;
+    margin: 1rem 0px 1rem;
+  }
+
+  .section-planes p strong {
+    font-size: 1.2rem;
+  }
+
+  .contenedor-planes {
+    margin: 1rem 0 1rem;
+  }
+
+  .plan {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .plan-titulo {
+    font-size: 1.75rem;
+  }
+
+  .plan-descripcion {
+    font-size: 1rem;
+  }
+
+  .plan-precio {
+    font-size: 2.5rem;
+  }
+
+  .plan-incluye {
+    font-size: 1.2rem;
+  }
+
+  .listado li,
+  .plan-lista li {
+    font-size: 1.1rem;
+  }
+
+  .plan-nota {
+    font-size: 1rem;
+  }
+
+  .plan-tiempo {
+    font-size: 0.9rem;
+  }
+
+  .boton-plan {
+    margin-top: auto;
+  }
+}

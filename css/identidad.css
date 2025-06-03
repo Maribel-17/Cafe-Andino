@@ -1,0 +1,217 @@
+/* Estilos generales */
+
+.section-identidad {
+  text-align: center;
+  padding: 4rem 2rem 2rem;
+  color: var(--color1);
+  margin: 0 auto;
+  scroll-margin-top: 100px;
+}
+
+.container-identidad {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.section-identidad h5 {
+  margin-bottom: 1rem;
+  color: var(--color2);
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.section-identidad h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.8rem;
+  margin: 2rem 0px 2rem;
+  color: var(--color1);
+}
+
+.section-identidad p {
+  font-size: 1rem;
+  text-align: justify;
+  line-height: 1.5rem;
+  color: var(--color3);
+}
+
+.section-identidad p strong {
+  font-size: 1rem;
+}
+
+.servicios-identidad {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem 0rem;
+}
+
+.card-servicio {
+  background-color: var(--color10);
+  border-radius: 20px;
+  width: 300px;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1.5rem;
+  gap: 0.8rem;
+}
+
+.card-servicio img {
+  width: 40px;
+  height: auto;
+}
+
+.card-servicio h3 {
+  font-size: 1rem;
+  color: var(--color5);
+}
+
+.card-servicio p {
+  font-size: 0.9rem;
+  color: var(--color4);
+}
+
+.container-texto-identidad p {
+  font-size: 1rem;
+  color: var(--color1);
+}
+
+.button-identidad {
+  text-align: center;
+  width: 100%;
+}
+
+.btn-identidad {
+  background-color: var(--color2);
+  color: var(--color11);
+  padding: 0.8rem 1.6rem;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  display: inline-block;
+  margin: 1.5rem 0rem;
+}
+
+.btn-identidad:hover {
+  background-color: var(--color14);
+}
+
+@media screen and (min-width: 768px) {
+
+  .servicios-identidad {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .section-identidad h5 {
+    font-size: 1rem;
+  }
+
+  .section-identidad h1 {
+    font-size: 2.2rem;
+  }
+
+  .section-identidad p {
+    font-size: 1.1rem;
+  }
+
+  .card-servicio {
+    flex: 0 1 calc(50% - 2rem);
+  }
+
+  .card-servicio img {
+    width: 45px;
+  }
+
+  .card-servicio h3 {
+    font-size: 1.1rem;
+  }
+
+  .card-servicio p {
+    font-size: 1rem;
+    color: var(--color4);
+  }
+
+  .container-texto-identidad p strong {
+    font-size: 1.1rem;
+    color: var(--color1);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+
+  .servicios-identidad {
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 1.5rem;
+  }
+
+  .section-identidad h5 {
+    font-size: 1.1rem;
+  }
+
+  .section-identidad h1 {
+    font-size: 2.8rem;
+  }
+
+  .section-identidad p {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+  }
+
+  .card-servicio {
+    flex: 1 1 0;
+    max-width: none;
+    width: 300px;
+  height: 250px;
+  }
+
+  .card-servicio img {
+    width: 50px;
+  }
+
+  .card-servicio h3 {
+    font-size: 1.1rem;
+  }
+
+  .card-servicio p {
+    font-size: 1.1rem;
+    color: var(--color4);
+    text-align: center;
+  }
+
+  .container-texto-identidad p strong {
+    font-size: 1.2rem;
+    color: var(--color1);
+  }
+
+  .card-servicio:hover {
+    background-color: var(--color2);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+  }
+
+  .card-servicio:hover h3,
+  .card-servicio:hover p {
+    color: var(--color11);
+  }
+
+  .card-servicio:hover img {
+    filter: brightness(0) invert(1);
+  }
+
+  .button-identidad {
+    text-align: left;
+  }
+}
