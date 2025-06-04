@@ -1,6 +1,6 @@
 /* Estilos generales */
 
-.section-sobreMi {
+.section-nosotros {
   background-color: var(--color6);
   text-align: center;
   padding: 4rem 2rem 2rem;
@@ -9,62 +9,62 @@
   scroll-margin-top: 100px;
 }
 
-.container-info-sobreMi {
+.container-info-nosotros {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
 }
 
-.section-sobreMi h5 {
+.section-nosotros h5 {
   margin-bottom: 1rem;
   color: var(--color2);
   text-align: center;
   font-size: 0.9rem;
 }
 
-.section-sobreMi h1 {
+.section-nosotros h1 {
   font-family: "Poppins", sans-serif;
   font-size: 1.8rem;
   margin: 2rem 0px 2rem;
   color: var(--color1);
 }
 
-.section-sobreMi p {
+.section-nosotros p {
   font-size: 1rem;
   text-align: justify;
   line-height: 1.5rem;
   color: var(--color3);
 }
 
-.section-sobreMi p strong {
+.section-nosotros p strong {
   color: var(--color1);
 }
 
-.container-img-sobreMi {
+.container-img-nosotros {
   margin: 2rem 0px;
 }
 
-.container-img-sobreMi:hover {
+.container-img-nosotros:hover {
   transform: scale(1.1) rotate(-2deg);
   transition: transform 0.3s ease;
 }
 
 @media screen and (min-width: 768px) {
-  .section-sobreMi h5 {
+  .section-nosotros h5 {
     font-size: 1rem;
   }
 
-  .section-sobreMi h1 {
+  .section-nosotros h1 {
     font-size: 2.2rem;
   }
 
-  .section-sobreMi p {
+  .section-nosotros{
     font-size: 1.1rem;
     line-height: 1.8rem;
   }
 
-  .container-img-sobreMi {
+  .container-img-nosotros {
     max-width: 500px;
     margin: 2rem auto;
     width: 100%;
@@ -72,7 +72,7 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .container-info-sobreMi {
+  .container-info-nosotros {
     display: flex;
     flex-direction: row;
     gap: 4rem;
@@ -82,30 +82,30 @@
     padding: 0 2rem;
   }
 
-  .section-sobreMi h5 {
+  .section-nosotros h5 {
     font-size: 1.1rem;
     text-align: left;
   }
 
-  .section-sobreMi h1 {
+  .section-nosotros h1 {
     font-size: 2.8rem;
     text-align: left;
   }
 
-  .section-sobreMi p {
+  .section-nosotros p {
     font-size: 1.2rem;
   }
 
-  .section-sobreMi p strong {
+  .section-nosotros p strong {
     font-size: 1.3rem;
   }
 
-  .container-texto-sobreMi {
+  .container-texto-nosotros {
     flex: 1;
     max-width: 50%;
   }
 
-  .container-img-sobreMi {
+  .container-img-nosotros {
     flex: 1;
     max-width: 50%;
     width: 100%;
