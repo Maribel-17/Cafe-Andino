@@ -100,16 +100,22 @@
 }
 
 @media screen and (min-width: 768px) {
-  /*.section-menu h5 {
+
+   .contenedor-info-menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    justify-items: center;
+  }
+
+  .section-menu h5 {
     font-size: 1.1rem;
   }
 
-  .section-menu h1 {
+   .section-menu h1 {
     font-size: 2.5rem;
-    line-height: 1.1;
+    line-height: 1;
     max-width: 100%;
-    margin-bottom: 1.5rem;
-    text-align: center;
   }
 
   .section-menu p {
@@ -117,18 +123,10 @@
     line-height: 1.8rem;
   }
 
-  .container-img-menu {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-  }
+  .btn-menu-1 {
+    margin: 2rem 0 2rem;
+}
 
-  .container-img-menu img {
-    width: 100%;
-    max-width: 500px;
-    object-fit: contain;
-  }*/
 }
 
 @media screen and (min-width: 1024px) {
@@ -161,28 +159,19 @@
     max-width: 500px;
   }
 
-  .contenedor-info-menu {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-    justify-items: center;
-  }
-
-  .section-menu h1 {
-    font-size: 2.8rem;
-    text-align: right;
-    max-width: 100%;
-    margin: 0;
-  }
-
-  .section-menu h5 {
+    .section-menu h5 {
     font-size: 1.3rem;
     text-align: left;
   }
 
+   .section-menu h1 {
+    font-size: 2.8rem;
+    text-align: right;
+    margin: 0;
+  }
+
   .section-menu p {
     font-size: 1.2rem;
-    line-height: 1.8rem;
     max-width: 100%;
   }
 
