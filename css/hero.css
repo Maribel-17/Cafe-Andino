@@ -36,6 +36,7 @@
 }
 
 .hero-texto h1 {
+  font-weight: 300;
   font-size: 2.2rem;
   color: var(--color8);
   margin-bottom: 1rem;

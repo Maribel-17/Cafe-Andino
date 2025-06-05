@@ -1,10 +1,9 @@
 /* Estilos generales */
 
 .section-nosotros {
-  background-color: var(--color6);
+  background-color: var(--color1);
   text-align: center;
   padding: 4rem 2rem 2rem;
-  color: var(--color1);
   margin: 0 auto;
   scroll-margin-top: 100px;
 }
@@ -14,76 +13,103 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  font-family: "Poppins", sans-serif;
 }
 
 .section-nosotros h5 {
   margin-bottom: 1rem;
-  color: var(--color2);
+  color: var(--color4);
   text-align: center;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 .section-nosotros h1 {
-  font-family: "Poppins", sans-serif;
-  font-size: 1.8rem;
-  margin: 2rem 0px 2rem;
-  color: var(--color1);
+  font-family: "Caprasimo", serif;
+  font-size: 2.2rem;
+  margin: 2rem auto;
+  color: var(--color5);
+  font-weight: 300;
+  max-width: 250px;
 }
 
 .section-nosotros p {
   font-size: 1rem;
   text-align: justify;
   line-height: 1.5rem;
-  color: var(--color3);
+  color: var(--color5);
+  margin: 2rem 0rem;
 }
 
-.section-nosotros p strong {
-  color: var(--color1);
+.btn-nosotros-1 {
+  background-color: var(--color3);
+  color: var(--color8);
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.3);
+  padding: 0.8rem 1.6rem;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  display: inline-block;
+  width: 250px;
+  height: 50px;
 }
 
 .container-img-nosotros {
   margin: 2rem 0px;
 }
 
-.container-img-nosotros:hover {
-  transform: scale(1.1) rotate(-2deg);
-  transition: transform 0.3s ease;
-}
-
 @media screen and (min-width: 768px) {
   .section-nosotros h5 {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 
   .section-nosotros h1 {
-    font-size: 2.2rem;
+    font-size: 2.5rem;
+    line-height: 1.1;
+    max-width: 100%;
+    margin-bottom: 1.5rem;
+    text-align: center;
   }
 
-  .section-nosotros{
+  .section-nosotros p {
     font-size: 1.1rem;
     line-height: 1.8rem;
   }
 
   .container-img-nosotros {
-    max-width: 500px;
-    margin: 2rem auto;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .container-img-nosotros img {
     width: 100%;
+    max-width: 500px;
+    object-fit: contain;
   }
 }
 
 @media screen and (min-width: 1024px) {
+  .section-nosotros {
+    padding: 4rem 0rem;
+    height: 90vh;
+  }
+
   .container-info-nosotros {
     display: flex;
     flex-direction: row;
     gap: 4rem;
     max-width: 1200px;
     margin: 0 auto;
-    overflow: hidden;
     padding: 0 2rem;
+    align-items: center;
+    justify-content: space-between;
   }
 
   .section-nosotros h5 {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     text-align: left;
   }
 
@@ -96,18 +122,17 @@
     font-size: 1.2rem;
   }
 
-  .section-nosotros p strong {
-    font-size: 1.3rem;
-  }
-
   .container-texto-nosotros {
     flex: 1;
-    max-width: 50%;
+    max-width: 600px;
+  }
+
+  .container-button-nosotros {
+    display: flex;
+    justify-content: left;
   }
 
   .container-img-nosotros {
-    flex: 1;
-    max-width: 50%;
-    width: 100%;
+    justify-content: flex-end;
   }
 }
