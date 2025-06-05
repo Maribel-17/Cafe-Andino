@@ -1,58 +1,53 @@
 /* Estilos generales */
 
-.section-hablemos {
+.section-menu {
   background-color: var(--color6);
   text-align: center;
   padding: 4rem 2rem 2rem;
-  color: var(--color1);
   margin: 0 auto;
   scroll-margin-top: 100px;
 }
 
-.container-section-hablemos {
+.container-menu {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-}
-
-.section-hablemos h5 {
-  margin-bottom: 1rem;
-  color: var(--color2);
-  text-align: center;
-  font-size: 0.9rem;
-}
-
-.section-hablemos h1 {
   font-family: "Poppins", sans-serif;
-  font-size: 1.8rem;
-  margin: 2rem 0px 2rem;
-  color: var(--color1);
 }
 
-.section-hablemos p {
+.section-menu h5 {
+  margin-bottom: 1rem;
+  color: var(--color4);
+  text-align: center;
+  font-size: 1rem;
+}
+
+.section-menu h1 {
+  font-family: "Caprasimo", serif;
+  font-size: 2.2rem;
+  margin: 2rem auto;
+  color: var(--color5);
+  font-weight: 300;
+  max-width: 250px;
+}
+
+.section-menu p {
   font-size: 1rem;
   text-align: justify;
   line-height: 1.5rem;
-  color: var(--color3);
+  color: var(--color5);
+  margin: 1rem 0rem;
 }
 
-.section-hablemos p strong {
-  color: var(--color1);
+.container-button-menu {
+  align-items: center;
 }
 
-.container-img-hablemos {
-  margin: 2rem 0px;
-}
-
-.button-hablemos {
-  text-align: center;
-  width: 100%;
-}
-
-.btn-hablemos {
+.btn-menu-1 {
   background-color: var(--color2);
-  color: var(--color11);
+  color: var(--color8);
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.3);
   padding: 0.8rem 1.6rem;
   border: none;
   border-radius: 8px;
@@ -60,79 +55,152 @@
   font-weight: bold;
   font-size: 1rem;
   display: inline-block;
-  margin: 1.5rem 0rem;
+  width: 250px;
+  height: 50px;
+  margin: 2rem 0 1rem;
 }
 
-.btn-hablemos:hover {
-  background-color: var(--color14);
+.contenedor-info-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem 0rem;
+}
+
+.card-comida {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 360px;
+  height: 225px;
+}
+
+.card-comida img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 8px;
+}
+
+.card-titulo {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.5rem 1rem;
+}
+
+.card-titulo h3 {
+  color: var(--color8);
+  margin: 0;
+  font-size: 1.2rem;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.3);
 }
 
 @media screen and (min-width: 768px) {
-  .section-hablemos h5 {
-    font-size: 1rem;
+  /*.section-menu h5 {
+    font-size: 1.1rem;
   }
 
-  .section-hablemos h1 {
-    font-size: 2.2rem;
+  .section-menu h1 {
+    font-size: 2.5rem;
+    line-height: 1.1;
+    max-width: 100%;
+    margin-bottom: 1.5rem;
+    text-align: center;
   }
 
-  .section-hablemos p {
+  .section-menu p {
     font-size: 1.1rem;
     line-height: 1.8rem;
   }
 
-  .section-hablemos p strong {
-    margin-bottom: 2rem;
+  .container-img-menu {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
   }
 
-  .container-img-hablemos {
-    max-width: 400px;
-    margin: 2rem auto;
+  .container-img-menu img {
     width: 100%;
-  }
-
+    max-width: 500px;
+    object-fit: contain;
+  }*/
 }
 
 @media screen and (min-width: 1024px) {
-  .container-section-hablemos {
-    margin: 0 auto;
-    flex-direction: row;
-    gap: 4rem;
+  .section-menu {
+    padding: 4rem 0rem;
+    height: 90vh;
+    text-align: right;
+    text-align: center;
+     display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container-general-menu {
     max-width: 1200px;
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 0 auto;
+    gap: 4rem;
   }
 
-  .container-texto-hablemos {
-    text-align: left;
+  .container-menu {
+    align-items: flex-end;
+    gap: 2rem;
+    max-width: 500px;
   }
 
-  .section-hablemos h5 {
-    text-align: left;
-    font-size: 1.1rem;
+  .container-menu > div:first-child {
+    flex: 1;
+    max-width: 500px;
   }
 
-  .section-hablemos h1 {
+  .contenedor-info-menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    justify-items: center;
+  }
+
+  .section-menu h1 {
     font-size: 2.8rem;
-    line-height: 1.3;
+    text-align: right;
+    max-width: 100%;
+    margin: 0;
   }
 
-  .section-hablemos p {
-    font-size: 1.2rem;
-  }
-
-  .section-hablemos p strong {
+  .section-menu h5 {
     font-size: 1.3rem;
-  }
-
-  .container-texto-hablemos {
     text-align: left;
-    max-width: 50%;
   }
 
-  .container-img-hablemos {
-    max-width: 600px;
+  .section-menu p {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    max-width: 100%;
   }
 
-  .button-hablemos {
-    text-align: left;
+  .container-button-menu {
+    justify-content: flex-start;
+  }
+
+  .card-comida img {
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .btn-menu-1 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .btn-menu-1:hover {
+    background-color: var(--color9);
   }
 }

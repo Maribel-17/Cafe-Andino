@@ -92,6 +92,7 @@
 }
 
 @media screen and (min-width: 1024px) {
+  
   .section-nosotros {
     padding: 4rem 0rem;
     height: 90vh;
@@ -103,7 +104,6 @@
     gap: 4rem;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 2rem;
     align-items: center;
     justify-content: space-between;
   }
