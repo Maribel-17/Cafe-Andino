@@ -1,0 +1,138 @@
+/* Estilos generales */
+
+.section-contacto {
+  background-color: var(--color1);
+  text-align: center;
+  padding: 4rem 2rem 2rem;
+  margin: 0 auto;
+  scroll-margin-top: 100px;
+}
+
+.container-info-contacto {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+}
+
+.section-contacto h5 {
+  margin-bottom: 1rem;
+  color: var(--color4);
+  text-align: center;
+  font-size: 1rem;
+}
+
+.section-contacto h1 {
+  font-family: "Caprasimo", serif;
+  font-size: 2.2rem;
+  margin: 2rem auto;
+  color: var(--color5);
+  font-weight: 300;
+  max-width: 250px;
+}
+
+.section-contacto p {
+  font-size: 1rem;
+  text-align: justify;
+  line-height: 1.5rem;
+  color: var(--color5);
+  margin: 2rem 0rem;
+}
+
+.btn-contacto-1 {
+  background-color: var(--color3);
+  color: var(--color8);
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.3);
+  padding: 0.8rem 1.6rem;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  display: inline-block;
+  width: 250px;
+  height: 50px;
+}
+
+.container-img-contacto {
+  margin: 2rem 0px;
+}
+
+@media screen and (min-width: 768px) {
+  .section-contacto h5 {
+    font-size: 1.1rem;
+  }
+
+  .section-contacto h1 {
+    font-size: 2.5rem;
+    line-height: 1.1;
+    max-width: 100%;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  .section-contacto p {
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+  }
+
+  .container-img-contacto {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .container-img-contacto img {
+    width: 100%;
+    max-width: 500px;
+    object-fit: contain;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  
+  .section-contacto {
+    padding: 4rem 0rem;
+    height: 90vh;
+  }
+
+  .container-info-contacto {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .section-contacto h5 {
+    font-size: 1.3rem;
+    text-align: left;
+  }
+
+  .section-contacto h1 {
+    font-size: 2.8rem;
+    text-align: left;
+  }
+
+  .section-contacto p {
+    font-size: 1.2rem;
+  }
+
+  .container-texto-contacto {
+    flex: 1;
+    max-width: 600px;
+  }
+
+  .container-button-contacto {
+    display: flex;
+    justify-content: left;
+  }
+
+  .container-img-contacto {
+    justify-content: flex-end;
+  }
+}

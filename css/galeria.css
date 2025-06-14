@@ -1,217 +1,210 @@
 /* Estilos generales */
 
-.section-identidad {
+.section-galeria {
   text-align: center;
   padding: 4rem 2rem 2rem;
   color: var(--color1);
   margin: 0 auto;
   scroll-margin-top: 100px;
+  background-color: var(--color6);
 }
 
-.container-identidad {
+.container-galeria {
   max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-}
-
-.section-identidad h5 {
-  margin-bottom: 1rem;
-  color: var(--color2);
-  text-align: center;
-  font-size: 0.9rem;
-}
-
-.section-identidad h1 {
-  font-family: "Poppins", sans-serif;
-  font-size: 1.8rem;
-  margin: 2rem 0px 2rem;
-  color: var(--color1);
-}
-
-.section-identidad p {
-  font-size: 1rem;
-  text-align: justify;
-  line-height: 1.5rem;
-  color: var(--color3);
-}
-
-.section-identidad p strong {
-  font-size: 1rem;
-}
-
-.servicios-identidad {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  width: 100%;
   gap: 2rem;
-  margin: 2rem 0rem;
-}
-
-.card-servicio {
-  background-color: var(--color10);
-  border-radius: 20px;
-  width: 300px;
-  height: 180px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   justify-content: center;
-  text-align: center;
-  padding: 1.5rem;
-  gap: 0.8rem;
 }
 
-.card-servicio img {
-  width: 40px;
-  height: auto;
-}
-
-.card-servicio h3 {
-  font-size: 1rem;
-  color: var(--color5);
-}
-
-.card-servicio p {
-  font-size: 0.9rem;
+.section-galeria h5 {
+  margin-bottom: 1rem;
   color: var(--color4);
-}
-
-.container-texto-identidad p {
-  font-size: 1rem;
-  color: var(--color1);
-}
-
-.button-identidad {
   text-align: center;
+  font-size: 1rem;
+}
+
+.section-galeria h1 {
+  font-family: "Caprasimo", serif;
+  font-size: 2.2rem;
+  margin: 0rem auto;
+  color: var(--color5);
+  font-weight: 300;
+  max-width: 250px;
+}
+
+.section-galeria p {
+  font-size: 1rem;
+  text-align: justify;
+  line-height: 1.5rem;
+  color: var(--color5);
+  margin: 1rem 0rem;
+}
+
+.carrusel-fotos {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding: 2rem 0;
+}
+
+.slider-container {
+  /*position: relative;*/
+  display: flex;
+  transition: transform 0.5s ease-in-out;
   width: 100%;
 }
 
-.btn-identidad {
-  background-color: var(--color2);
-  color: var(--color11);
-  padding: 0.8rem 1.6rem;
-  border: none;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1rem;
-  display: inline-block;
-  margin: 1.5rem 0rem;
+.slide {
+  min-width: 100%;
+  display: none;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.5s ease;
 }
 
-.btn-identidad:hover {
-  background-color: var(--color14);
+.slide.active {
+  display: flex;
+  opacity: 1;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Flechas */
+.prev,
+.next {
+  display: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: var(--color2);
+  color: var(--color8);
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  z-index: 10;
+}
+
+.prev {
+  left: 10px;
+}
+.next {
+  right: 10px;
+}
+
+/* Dots */
+.dots {
+  text-align: center;
+  margin-top: 1rem;
+}
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 5px;
+  background-color: var(--color4);
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: all 0.3s ease;
+}
+.dot.active {
+  background-color: var(--color2);
+  opacity: 1;
 }
 
 @media screen and (min-width: 768px) {
 
-  .servicios-identidad {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
+   .slide {
+    display: block;
+    opacity: 1;
   }
 
-  .section-identidad h5 {
-    font-size: 1rem;
+  .slide.active {
+    display: block;
+    opacity: 1;
+  }
+  .prev,
+  .next {
+    display: block;
   }
 
-  .section-identidad h1 {
-    font-size: 2.2rem;
-  }
-
-  .section-identidad p {
-    font-size: 1.1rem;
-  }
-
-  .card-servicio {
-    flex: 0 1 calc(50% - 2rem);
-  }
-
-  .card-servicio img {
-    width: 45px;
-  }
-
-  .card-servicio h3 {
-    font-size: 1.1rem;
-  }
-
-  .card-servicio p {
-    font-size: 1rem;
-    color: var(--color4);
-  }
-
-  .container-texto-identidad p strong {
-    font-size: 1.1rem;
-    color: var(--color1);
+  .dot {
+    display: none;
   }
 }
 
 @media screen and (min-width: 1024px) {
-
-  .servicios-identidad {
-    justify-content: space-between;
-    flex-wrap: nowrap;
-    gap: 1.5rem;
-  }
-
-  .section-identidad h5 {
+  
+  .section-galeria h5 {
     font-size: 1.1rem;
   }
 
-  .section-identidad h1 {
-    font-size: 2.8rem;
+  .section-galeria h1 {
+    font-size: 2.5rem;
+    line-height: 1;
+    max-width: 100%;
   }
 
-  .section-identidad p {
+  .section-galeria p {
     font-size: 1.2rem;
-    line-height: 1.8rem;
   }
 
-  .card-servicio {
-    flex: 1 1 0;
-    max-width: none;
+  .carrusel-fotos {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding: 2rem 0;
+  }
+
+  .slider-container {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+  }
+
+  .slide {
+    flex: 0 0 auto;
     width: 300px;
-  height: 250px;
+    display: block;
+    opacity: 1;
   }
 
-  .card-servicio img {
-    width: 50px;
+
+ .slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
   }
 
-  .card-servicio h3 {
-    font-size: 1.1rem;
+  /* Flechas */
+  .prev,
+  .next {
+    display: block;
   }
 
-  .card-servicio p {
-    font-size: 1.1rem;
-    color: var(--color4);
-    text-align: center;
+  /* Dots */
+  .dots {
+    display: none;
   }
-
-  .container-texto-identidad p strong {
-    font-size: 1.2rem;
-    color: var(--color1);
-  }
-
-  .card-servicio:hover {
-    background-color: var(--color2);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    transform: translateY(-5px);
-    transition: all 0.3s ease;
-  }
-
-  .card-servicio:hover h3,
-  .card-servicio:hover p {
-    color: var(--color11);
-  }
-
-  .card-servicio:hover img {
-    filter: brightness(0) invert(1);
-  }
-
-  .button-identidad {
-    text-align: left;
+  
+   .slide.active {
+    display: block;
+    opacity: 1;
   }
 }

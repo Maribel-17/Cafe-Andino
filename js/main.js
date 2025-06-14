@@ -30,13 +30,77 @@ document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("resize", ajustarPadding);
 });
 
-
 const parte1 = "consultas";
-  const parte2 = "mpestudiodisenio";
-  const parte3 = "com.ar";
-  const email = `${parte1}@${parte2}.${parte3}`;
+const parte2 = "mpestudiodisenio";
+const parte3 = "com.ar";
+const email = `${parte1}@${parte2}.${parte3}`;
 
-  const emailText = document.getElementById("email-text");
-  emailText.innerHTML = `<a href="mailto:${email}">${email}</a>`;
+const emailText = document.getElementById("email-text");
+emailText.innerHTML = `<a href="mailto:${email}">${email}</a>`;
 
+const slides = document.querySelectorAll('.slide');
+const dots = document.querySelectorAll('.dot');
+const prev = document.querySelector('.prev');
+const next = document.querySelector('.next');
+const sliderContainer = document.querySelector('.slider-container');
 
+let currentSlide = 0;
+
+function isMobile() {
+  return window.innerWidth < 1024;
+}
+
+// Mostrar solo una slide en mobile
+function showSlide(index) {
+  if (isMobile()) {
+    slides.forEach((slide, i) => {
+      slide.classList.remove('active');
+      dots[i].classList.remove('active');
+    });
+
+    slides[index].classList.add('active');
+    dots[index].classList.add('active');
+    currentSlide = index;
+  }
+}
+
+// Botones dots (solo en mobile)
+dots.forEach(dot => {
+  dot.addEventListener('click', () => {
+    if (isMobile()) {
+      const index = parseInt(dot.getAttribute('data-slide'));
+      showSlide(index);
+    }
+  });
+});
+
+// Botones flecha
+prev.addEventListener('click', () => {
+  if (isMobile()) {
+    const newIndex = (currentSlide - 1 + slides.length) % slides.length;
+    showSlide(newIndex);
+  } else {
+    sliderContainer.scrollBy({ left: -320, behavior: 'smooth' });
+  }
+});
+
+next.addEventListener('click', () => {
+  if (isMobile()) {
+    const newIndex = (currentSlide + 1) % slides.length;
+    showSlide(newIndex);
+  } else {
+    sliderContainer.scrollBy({ left: 320, behavior: 'smooth' });
+  }
+});
+
+// Iniciar
+window.addEventListener('load', () => {
+  if (isMobile()) showSlide(0);
+});
+
+// Si se redimensiona la pantalla (de desktop a mobile por ejemplo)
+window.addEventListener('resize', () => {
+  if (isMobile()) {
+    showSlide(currentSlide);
+  }
+});

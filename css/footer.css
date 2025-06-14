@@ -49,7 +49,7 @@ footer {
   margin-bottom: 1rem;
 }
 
-.contacto {
+.contacto-footer {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -59,12 +59,12 @@ footer {
   align-items: center;
 }
 
-.contacto li {
+.contacto-footer li {
   display: flex;
   justify-content: center;
 }
 
-.contacto a {
+.contacto-footer a {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -73,7 +73,7 @@ footer {
   white-space: nowrap;
 }
 
-.contacto img {
+.contact-footer img {
   width: 20px;
 }
 
@@ -172,20 +172,20 @@ footer {
     padding-left: 2rem;
   }
 
-  .contacto {
+  .contacto-footer {
   gap: 0rem;
   align-items:start;
 }
 
-  .contacto li {
+  .contacto-footer li {
     margin-bottom: 0.5rem;
   }
 
-  .contacto a {
+  .contacto-footer a {
     justify-content: flex-start;
   }
 
-  .contacto img {
+  .contacto-footer img {
     margin-right: 0.5rem;
     width: 20px;
     height: auto;
