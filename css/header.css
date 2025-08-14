@@ -44,7 +44,7 @@ header {
 
 .logo {
   content: url("../img/ICOCafe.png");
-  width: 80px;
+  width: 60px;
   z-index: 10000;
   position: relative;
 }

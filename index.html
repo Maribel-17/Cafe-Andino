@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="./css/galeria.css" />
   <link rel="stylesheet" href="./css/contacto.css">
   <link rel="stylesheet" href="./css/footer.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -186,29 +187,12 @@
         <p>Cada rincón de Café Andino tiene algo especial. Espacios, aromas y sabores que cuentan nuestra historia. Te
           invitamos a conocerlo a través de estos momentos y detalles que amamos.</p>
       </div>
-      <div class="carrusel-fotos">
-        <div class="slider-container">
-          <div class="slide active">
-            <img src="./img/foto café 1.png" alt="Foto 1">
-          </div>
-          <div class="slide">
-            <img src="./img/foto café 2.png" alt="Foto 2">
-          </div>
-          <div class="slide">
-            <img src="./img/foto café 3.png" alt="Foto 3">
-          </div>
-          <div class="slide">
-            <img src="./img/foto café 4.png" alt="Foto 4">
-          </div>
-          <button class="prev">&#10094;</button>
-          <button class="next">&#10095;</button>
-        </div>
-        <div class="dots">
-          <span class="dot active" data-slide="0"></span>
-          <span class="dot" data-slide="1"></span>
-          <span class="dot" data-slide="2"></span>
-          <span class="dot" data-slide="3"></span>
-        </div>
+      <div class="carousel-container">
+        <div class="carousel-slide"> <img src="./img/foto café 1.png" alt="Imagen 1"> </div>
+        <div class="carousel-slide"> <img src="./img/foto café 2.png" alt="Imagen 2"> </div>
+        <div class="carousel-slide"> <img src="./img/foto café 3.png" alt="Imagen 3"> </div>
+        <div class="carousel-slide"> <img src="./img/foto café 4.png" alt="Imagen 3"> </div> <button
+          class="carousel-button prev">Anterior</button> <button class="carousel-button next">Siguiente</button>
       </div>
     </section>
 
@@ -219,26 +203,33 @@
           <h1>Vení a visitarnos</h1>
           <ul class="contacto">
             <li>
-              <a href="https://wa.link/a6mx0n" target="_blank">
-                <img src="./img/IcoWhatsapp.svg" alt="WhatsApp" /> +54 9 261 651
-                4720
+              <a href="#" target="_blank">
+                <img src="./img/IcoUbicacion.svg" alt="Dirección" /> Dirección: Av. Las Heras 456, Ciudad de Mendoza
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+                <img src="./img/IcoReloj.svg" alt="Horarios" /> Horarios: Lunes a sábado de 8 a 20 hs
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+                <img src="./img/IcoWhatsapp.svg" alt="WhatsApp" /> WhatsApp: 261-000-0001
               </a>
             </li>
             <li id="email-item">
-              <img src="./img/IcoSobre.svg" alt="Email" />
+              <img src="./img/IcoSobre.svg" alt="Email" />Email: cafeandino@email.com
               <span id="email-text"></span>
             </li>
             <li>
-              <a href="https://www.instagram.com/mpestudiodisenio/" target="_blank">
+              <a href="#" target="_blank">
                 <img src="./img/IcoInstagram.svg" alt="Instagram" />
-                mpestudiodisenio
+                Instagram:@cafe.andino
               </a>
             </li>
           </ul>
           <div class="container-button-contacto">
-            <a class="btn-contacto-1"
-              href="https://wa.me/5492616514720?text=Hola!%20Quiero%20mi%20One%20Page%2C%20%C2%BFpodemos%20hablar%3F"
-              target="_blank">¡ESCRIBINOS!</a>
+            <a class="btn-contacto-1" href="#" target="_blank">¡ESCRIBINOS!</a>
           </div>
         </div>
         <div class="container-img-mapa-contacto">
@@ -294,7 +285,9 @@
     </div>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="./js/main.js" defer></script>
+
 </body>
 
 </html>

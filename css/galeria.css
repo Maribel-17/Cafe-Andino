@@ -1,44 +1,29 @@
-/* Estilos generales */
-
+/*Seccion Galeria*/
 .section-galeria {
+  background-color: var(--color6);
   text-align: center;
   padding: 4rem 2rem 2rem;
-  color: var(--color1);
   margin: 0 auto;
   scroll-margin-top: 100px;
-  background-color: var(--color6);
 }
-
 .container-galeria {
   max-width: 1200px;
-  width: 100%;
-  gap: 2rem;
   margin: 0 auto;
-  position: relative;
-  z-index: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
 }
-
 .section-galeria h5 {
   margin-bottom: 1rem;
   color: var(--color4);
   text-align: center;
   font-size: 1rem;
 }
-
 .section-galeria h1 {
   font-family: "Caprasimo", serif;
   font-size: 2.2rem;
-  margin: 0rem auto;
+  margin: 2rem auto;
   color: var(--color5);
   font-weight: 300;
   max-width: 250px;
 }
-
 .section-galeria p {
   font-size: 1rem;
   text-align: justify;
@@ -46,165 +31,46 @@
   color: var(--color5);
   margin: 1rem 0rem;
 }
-
-.carrusel-fotos {
-  position: relative;
+.carousel-container {
   width: 100%;
-  overflow: hidden;
-  padding: 2rem 0;
+  overflow: hidden; /* Oculta el contenido que se sale del contenedor */
+  position: relative; /* Permite posicionar los botones */
 }
-
-.slider-container {
-  /*position: relative;*/
-  display: flex;
-  transition: transform 0.5s ease-in-out;
+.carousel-slide {
+  display: none; /* Oculta todas las diapositivas inicialmente */
   width: 100%;
+  text-align: center;
 }
-
-.slide {
-  min-width: 100%;
-  display: none;
-  justify-content: center;
-  opacity: 0;
-  transition: opacity 0.5s ease;
+.carousel-slide img {
+  width: 100%; /* La imagen ocupa el 100% del ancho del slide */
+  height: auto; /* Mantiene la proporción de la imagen */
 }
-
-.slide.active {
-  display: flex;
-  opacity: 1;
+.carousel-slide.active {
+  display: block; /* Muestra la diapositiva activa */
 }
-
-.slide img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  border-radius: 10px;
-}
-
-/* Flechas */
-.prev,
-.next {
-  display: none;
+.carousel-button {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: var(--color2);
-  color: var(--color8);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
   border: none;
-  font-size: 2rem;
+  padding: 10px;
   cursor: pointer;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  z-index: 10;
 }
-
 .prev {
   left: 10px;
 }
 .next {
   right: 10px;
-}
-
-/* Dots */
-.dots {
-  text-align: center;
-  margin-top: 1rem;
-}
-.dot {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  margin: 5px;
-  background-color: var(--color4);
-  border-radius: 50%;
-  cursor: pointer;
-  opacity: 0.5;
-  transition: all 0.3s ease;
-}
-.dot.active {
-  background-color: var(--color2);
-  opacity: 1;
-}
-
-@media screen and (min-width: 768px) {
-
-   .slide {
-    display: block;
-    opacity: 1;
-  }
-
-  .slide.active {
-    display: block;
-    opacity: 1;
-  }
-  .prev,
-  .next {
-    display: block;
-  }
-
-  .dot {
-    display: none;
+} /* Media queries para pantallas más grandes */
+@media (min-width: 768px) {
+  .carousel-slide {
+    width: 50%; /* En pantallas más grandes, cada slide ocupa la mitad del contenedor */
   }
 }
-
-@media screen and (min-width: 1024px) {
-  
-  .section-galeria h5 {
-    font-size: 1.1rem;
-  }
-
-  .section-galeria h1 {
-    font-size: 2.5rem;
-    line-height: 1;
-    max-width: 100%;
-  }
-
-  .section-galeria p {
-    font-size: 1.2rem;
-  }
-
-  .carrusel-fotos {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    padding: 2rem 0;
-  }
-
-  .slider-container {
-    display: flex;
-    gap: 1rem;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-  }
-
-  .slide {
-    flex: 0 0 auto;
-    width: 300px;
-    display: block;
-    opacity: 1;
-  }
-
-
- .slide img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    object-fit: cover;
-  }
-
-  /* Flechas */
-  .prev,
-  .next {
-    display: block;
-  }
-
-  /* Dots */
-  .dots {
-    display: none;
-  }
-  
-   .slide.active {
-    display: block;
-    opacity: 1;
+@media (min-width: 1024px) {
+  .carousel-slide {
+    width: 33.33%; /* En pantallas aún más grandes, cada slide ocupa un tercio */
   }
 }

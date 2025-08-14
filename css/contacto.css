@@ -32,12 +32,10 @@
   max-width: 250px;
 }
 
-.section-contacto p {
-  font-size: 1rem;
-  text-align: justify;
-  line-height: 1.5rem;
-  color: var(--color5);
-  margin: 2rem 0rem;
+.section-contacto li img {
+  width: 30px;
+  height: 30px;
+  color: var(--color4);
 }
 
 .btn-contacto-1 {
