@@ -137,3 +137,4 @@ document.addEventListener('DOMContentLoaded', function() {
 
   showSlide(currentIndex); // Muestra la primera diapositiva al cargar la página
 });
+

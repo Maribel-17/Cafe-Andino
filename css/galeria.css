@@ -33,21 +33,26 @@
 }
 .carousel-container {
   width: 100%;
+  background-color: aquamarine;
   overflow: hidden; /* Oculta el contenido que se sale del contenedor */
   position: relative; /* Permite posicionar los botones */
 }
+
 .carousel-slide {
-  display: none; /* Oculta todas las diapositivas inicialmente */
+  display: none; 
   width: 100%;
   text-align: center;
 }
+
 .carousel-slide img {
-  width: 100%; /* La imagen ocupa el 100% del ancho del slide */
-  height: auto; /* Mantiene la proporción de la imagen */
+  width: 100%; 
+  height: auto; 
 }
+
 .carousel-slide.active {
   display: block; /* Muestra la diapositiva activa */
 }
+
 .carousel-button {
   position: absolute;
   top: 50%;
@@ -63,14 +68,51 @@
 }
 .next {
   right: 10px;
-} /* Media queries para pantallas más grandes */
+} 
+
 @media (min-width: 768px) {
-  .carousel-slide {
-    width: 50%; /* En pantallas más grandes, cada slide ocupa la mitad del contenedor */
+
+  .section-galeria h5 {
+    font-size: 1.1rem;
   }
+
+   .section-galeria h1 {
+    font-size: 2.5rem;
+    line-height: 1;
+    max-width: 100%;
+  }
+
+  .section-galeria p {
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+  }
+
+  .carousel-slide {
+    width: 50%; 
+ }
 }
+
+
 @media (min-width: 1024px) {
-  .carousel-slide {
-    width: 33.33%; /* En pantallas aún más grandes, cada slide ocupa un tercio */
+
+    .section-galeria h5 {
+    font-size: 1.3rem;
+    text-align: center;
   }
+
+   .section-galeria h1 {
+    font-size: 2.8rem;
+    text-align: center;
+    margin: 0;
+  }
+
+  .section-galeria p {
+    font-size: 1.2rem;
+    max-width: 100%;
+  }
+
+
+.carousel-slide {
+    width: 33.33%; }
+
 }
