@@ -135,7 +135,7 @@
 
   .container-info-contacto {
     flex-direction: row; /* texto izq - mapa der */
-    gap: 4rem;
+    gap: 1rem;
     align-items: center;
     justify-content: space-between;
   }
