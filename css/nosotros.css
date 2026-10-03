@@ -1,0 +1,284 @@
+/* ========================================
+   SECCIÓN NOSOTROS
+======================================== */
+
+.section-nosotros {
+  width: 100%;
+
+  padding:
+    4rem
+    var(--page-padding-mobile);
+
+  background-color: var(--color1);
+
+  text-align: center;
+}
+
+
+/* ========================================
+   CONTENEDOR GENERAL
+======================================== */
+
+.container-info-nosotros {
+  width: 100%;
+  max-width: var(--max-width);
+
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 2.5rem;
+}
+
+
+/* ========================================
+   TEXTO
+======================================== */
+
+.container-texto-nosotros {
+  width: 100%;
+}
+
+
+.section-nosotros h5 {
+  margin-bottom: 1rem;
+
+  color: var(--color4);
+
+  font-size: 0.9rem;
+  font-weight: 700;
+
+  text-align: center;
+}
+
+
+.section-nosotros h1 {
+  max-width: 330px;
+
+  margin: 0 auto 1.5rem;
+
+  color: var(--color5);
+
+  font-size: clamp(2rem, 8vw, 2.6rem);
+  font-weight: 400;
+  line-height: 1.05;
+
+  text-align: center;
+}
+
+
+.section-nosotros p {
+  max-width: 540px;
+
+  margin: 0 auto 2rem;
+
+  color: var(--color5);
+
+  font-size: 1rem;
+  line-height: 1.65;
+
+  text-align: left;
+}
+
+
+/* ========================================
+   BOTÓN
+======================================== */
+
+.container-button-nosotros {
+  display: flex;
+  justify-content: center;
+}
+
+
+.btn-nosotros-1 {
+  width: 100%;
+  max-width: 250px;
+  min-height: 48px;
+
+  padding: 0.8rem 1.4rem;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--color3);
+
+  border-radius: 6px;
+
+  color: var(--color8);
+
+  font-size: 0.9rem;
+  font-weight: 700;
+
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+
+.btn-nosotros-1:hover {
+  background-color: var(--color10);
+  transform: translateY(-2px);
+}
+
+
+/* ========================================
+   IMAGEN
+======================================== */
+
+.container-img-nosotros {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+}
+
+
+.container-img-nosotros img {
+  width: 100%;
+  max-width: 500px;
+
+  aspect-ratio: 4 / 5;
+
+  object-fit: cover;
+
+  border-radius: 8px;
+}
+
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media screen and (min-width: 768px) {
+
+  .section-nosotros {
+    padding:
+      5rem
+      var(--page-padding-tablet);
+  }
+
+
+  .container-info-nosotros {
+    gap: 3rem;
+  }
+
+
+  .section-nosotros h5 {
+    font-size: 1rem;
+  }
+
+
+  .section-nosotros h1 {
+    max-width: 600px;
+
+    font-size: 2.8rem;
+  }
+
+
+  .section-nosotros p {
+    max-width: 650px;
+
+    font-size: 1.05rem;
+    line-height: 1.75;
+  }
+
+
+  .container-img-nosotros img {
+    max-width: 600px;
+  }
+
+}
+
+
+/* ========================================
+   DESKTOP
+======================================== */
+
+@media screen and (min-width: 1024px) {
+
+  .section-nosotros {
+    min-height: 80vh;
+
+    padding:
+      6rem
+      var(--page-padding-desktop);
+
+    display: flex;
+    align-items: center;
+  }
+
+
+  .container-info-nosotros {
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: clamp(4rem, 8vw, 8rem);
+  }
+
+
+  .container-texto-nosotros {
+    flex: 1;
+
+    max-width: 560px;
+  }
+
+
+  .section-nosotros h5 {
+    margin-bottom: 1.5rem;
+
+    font-size: 1rem;
+
+    text-align: left;
+  }
+
+
+  .section-nosotros h1 {
+    max-width: 100%;
+
+    margin: 0 0 1.8rem;
+
+    font-size: clamp(2.8rem, 3.6vw, 3.6rem);
+    line-height: 1.05;
+
+    text-align: left;
+  }
+
+
+  .section-nosotros p {
+    max-width: 100%;
+
+    margin: 0 0 2rem;
+
+    font-size: 1.05rem;
+    line-height: 1.7;
+
+    text-align: left;
+  }
+
+
+  .container-button-nosotros {
+    justify-content: flex-start;
+  }
+
+
+  .container-img-nosotros {
+    flex: 1;
+
+    justify-content: flex-end;
+  }
+
+
+  .container-img-nosotros img {
+    width: min(100%, 520px);
+
+    aspect-ratio: 4 / 5;
+  }
+
+}
